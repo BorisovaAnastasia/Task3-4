@@ -35,14 +35,15 @@ public class ArrayItem
     protected string GetStringRnd()
     {
         Random random = new Random();
-        return  Convert.ToString(random.Next(0, 100));
+        string[] mas = new string[] {"word_1", "word_2", "word_3", "word_4"};
+        return  mas[random.Next(0, 4)];
     }
 
     protected string GetStringUser()
     {
         Console.WriteLine("Enter the string: ");
-        var res =  Console.ReadLine();
-        return res!=null?res:"";
+        var str =  Console.ReadLine();
+        return str;
     }
     public string GetString()
     {
@@ -59,7 +60,7 @@ public class ArrayItem
     protected bool GetBoolRnd()
     {
         Random random = new Random();
-        return  Convert.ToBoolean(random.Next(0, 2));
+        return Convert.ToBoolean(random.Next(0, 2));
     }
 
     protected bool GetBoolUser()
